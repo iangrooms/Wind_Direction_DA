@@ -36,7 +36,7 @@ for ii=1:Nt
         end
         % Get p increments
         s2 = var(p);g2 = psi_obs_err^2;
-        p_inc = (s2/(s2+g2))*psi_obs(ko,ii) + (psi_obs_err^2/(s2+g2))*mean(p) ...
+        p_inc = (s2/(s2+g2))*psi_obs(ko,ii) + (g2/(s2+g2))*mean(p) ...
                 + (psi_obs_err/sqrt(s2+g2))*(p - mean(p));
         p_inc = reshape(p_inc - p,[1 1 Ne]);
         rho = max(abs(p_inc(:)));

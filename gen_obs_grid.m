@@ -1,5 +1,3 @@
-Nt = 1024; % Number of assimilation cycles
-load ../Reference/qp_ref_01.mat
 ind_o = 16:32:256;
 n_o = length(ind_o);
 k = [0:128 -127:-1];

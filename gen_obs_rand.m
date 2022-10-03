@@ -1,7 +1,3 @@
-Nt = 1024; % Number of assimilation cycles
-
-load ../Reference/qp_ref_01.mat
-
 % Get obs
 n_o = 64;
 ind_o = zeros([n_o 2 Nt]); 
